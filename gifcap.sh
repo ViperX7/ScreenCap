@@ -10,12 +10,13 @@ wait=$STARTUP_DELAY
 
 delay(){
     if [ $wait != 0 ];then
-        echo  Starting Recording in $wait
+        echo  -ne "\r$(tput setaf 1)Recording in "$(tput setaf 3)"$wait"
         wait=$(expr $wait - 1)
         sleep 1
         delay
 
     else
+        echo  -e "\r$(tput setaf 2)Recording Started                          "
         sleep 1
     fi
 

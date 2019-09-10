@@ -3,7 +3,7 @@
 
 # Strings
 
-help='usage: imgtool [-h] [-o output] [-f FRAMERATE] [-d DELAY]
+help='usage: ./screenCap [-h] [-o output] [-f FRAMERATE] [-d DELAY]
 \n
 \noptional arguments:
 \n
@@ -59,6 +59,7 @@ do
             ;;
        -h|--help)
             echo -e $help
+            quit
             shift
             ;;
         *)    # unknown option

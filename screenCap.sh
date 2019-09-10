@@ -12,7 +12,7 @@ help='usage: imgtool [-h] [-o output] [-f FRAMERATE] [-d DELAY]
 \n\t  -d DELAY , --dekay DELAY\t\t           Delay before recording starts
 \n\t  -h, --help\t\t\t\t           Show this help message and exit'
 
-title="GIFCap"
+title="ScreenCap"
 
 banner()
 {

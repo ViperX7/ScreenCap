@@ -42,7 +42,7 @@ fi
 gifcap()
 {
     sleep $FRAMERATE
-    file=$OUTPUT_DIRECTORY'/'$(python3 rename.py $num'.png')
+    file=$OUTPUT_DIRECTORY'/'$(printf %04d $num)'.png'
     scrot $file -q 100
     num=$(expr $num + 1)
     gifcap
